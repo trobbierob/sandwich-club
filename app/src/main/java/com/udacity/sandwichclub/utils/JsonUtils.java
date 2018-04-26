@@ -21,11 +21,11 @@ public class JsonUtils {
 
             //Parse Root Object
             JSONObject jsonRootObject = new JSONObject(json);
-            Log.i(TAG, "JSON Object is... " + jsonRootObject);
+            Log.i(TAG, "JSON RootObject is... " + jsonRootObject);
 
             //Parse Data Object
             JSONObject jsonDataObject = jsonRootObject.optJSONObject("name");
-            Log.i(TAG, "JSON Object is... " + jsonDataObject);
+            Log.i(TAG, "JSON DataObject is... " + jsonDataObject);
 
             //Parse Name of Sandwich
             String mainName = jsonDataObject.getString("mainName");
@@ -33,12 +33,12 @@ public class JsonUtils {
 
             //Parse alsoKnowAs names of Sandwich
             JSONArray akaArray = jsonDataObject.optJSONArray("alsoKnownAs");
-            Log.i(TAG, "Sandwich also name is... " + akaArray);
+            Log.i(TAG, "Sandwich also goes by... " + akaArray);
             List<String> alsoKnownAs = new ArrayList<String>();
             for(int i = 0; i < akaArray.length(); i++) {
                 alsoKnownAs.add(akaArray.get(i).toString());
             }
-            Log.i(TAG, "List also name is... " + alsoKnownAs);
+            Log.i(TAG, "Also name list is... " + alsoKnownAs);
 
             //Parse Place of Origin of Sandwich
             String placeOfOrigin = jsonRootObject.getString("placeOfOrigin");
@@ -54,12 +54,12 @@ public class JsonUtils {
 
             //Parse Ingredients of Sandwich
             JSONArray ingredients = jsonRootObject.optJSONArray("ingredients");
-            Log.i(TAG, "Sandwich also name is... " + ingredients);
+            Log.i(TAG, "Sandwich ingredients array... " + ingredients);
             List<String> ingredientsList = new ArrayList<String>();
             for(int i = 0; i < ingredients.length(); i++) {
                 ingredientsList.add(ingredients.get(i).toString());
             }
-            Log.i(TAG, "List also name is... " + ingredientsList);
+            Log.i(TAG, "Ingredients list... " + ingredientsList);
 
             //Return Sandwich
             return new Sandwich(mainName, alsoKnownAs, placeOfOrigin, description, image, ingredientsList);
@@ -67,7 +67,7 @@ public class JsonUtils {
         } catch (JSONException e){
             Log.e(TAG, "JSONException at " + e);
         }
-        
+
         return null;
     }
 }
