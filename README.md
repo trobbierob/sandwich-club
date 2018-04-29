@@ -5,9 +5,8 @@ Complete the **Sandwich Club** app to
 show the details of each sandwich once it is selected.
 
 ## Sreenshots
-![ListView](https://github.com/trobbierob/sandwich-club/blob/master/photos/001.png)
-
-![DetailView](https://github.com/trobbierob/sandwich-club/blob/master/photos/002.png)
+![](https://github.com/trobbierob/sandwich-club/blob/master/photos/001.png)<br />
+![](https://github.com/trobbierob/sandwich-club/blob/master/photos/002.png)<br />
 
 ## What Will I Learn?
 Through this project, you will:
