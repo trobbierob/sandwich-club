@@ -53,7 +53,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_below="@id/description_cv"
-                android:id="@+id/third"
+                android:id="@+id/ingredients_cv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_16"
@@ -83,8 +83,8 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:layout_below="@id/third"
-                android:id="@+id/fourth"
+                android:layout_below="@id/ingredients_cv"
+                android:id="@+id/origin_cv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_16"
@@ -114,7 +114,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:layout_below="@id/fourth"
+                android:layout_below="@id/origin_cv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_16"
