@@ -67,8 +67,17 @@ public class DetailActivity extends AppCompatActivity {
 
     private void populateUI() {
 
-        originTV.setText(sandwich.getPlaceOfOrigin());
+        originTV.setText(sandwich.getPlaceOfOrigin().toString());
         descriptionTv.setText(sandwich.getDescription());
 
+        String str = sandwich.getIngredients().toString().replaceAll("\\[","")
+                .replaceAll("\\]","");
+        ingredientsTv.setText(str);
+
+        if (sandwich.getAlsoKnownAs().isEmpty()) {
+            akaTV.setText("NA");
+        } else {
+            akaTV.setText(sandwich.getAlsoKnownAs().toString());
+        }
     }
 }
