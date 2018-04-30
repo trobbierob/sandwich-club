@@ -4,7 +4,7 @@
 Complete the **Sandwich Club** app to
 show the details of each sandwich once it is selected.
 
-## Sreenshots
+## Screenshots
 ![](https://github.com/trobbierob/sandwich-club/blob/master/photos/001.png)<br />
 ![](https://github.com/trobbierob/sandwich-club/blob/master/photos/002.png)<br />
 

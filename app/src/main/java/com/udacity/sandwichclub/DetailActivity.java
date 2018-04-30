@@ -75,7 +75,7 @@ public class DetailActivity extends AppCompatActivity {
         ingredientsTv.setText(str);
 
         if (sandwich.getAlsoKnownAs().isEmpty()) {
-            akaTV.setText("NA");
+            akaTV.setText(R.string.na);
         } else {
             akaTV.setText(sandwich.getAlsoKnownAs().toString());
         }
